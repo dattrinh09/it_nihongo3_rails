@@ -1,23 +1,4 @@
-<style>
-    .navbar{
-        display: flex;
-        border-bottom: solid #333 2px;
-    }
-    .navbar__link{
-        margin-left: 8px;
-    }
-    .header__content{
-        margin-top: 30px;
-    }
-</style>
-<div class="navbar">
-    <p><%= link_to "ホーム", root_path%></p>
-    <p class="navbar__link"><%= link_to "サインイン", new_user_session_path %></p>
-    <p class="navbar__link"><%= link_to "ユーザ登録", new_user_registration_path %></p>
-</div>
-<div class="header__content">
+<hr>
     <h1><b>ホームページ</b></h1>
-</div>
-<div class="body__content">
-    <%= link_to "本一覧をみる", books_path %>
-</div>
+</hr>
+<%= link_to "本一覧をみる", books_path %>
