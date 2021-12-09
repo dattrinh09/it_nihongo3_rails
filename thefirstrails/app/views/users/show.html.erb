@@ -1,5 +1,8 @@
 <hr>
     <h1>プロフィール</h1>
+    <% if @user.avatar.attached? %>
+    <%= image_tag @user.avatar, width: "50%" %>
+    <% end %>
     <h3>メール アドレス</h3>
     <%= @user.email %>
     <h3>名前</h3>
